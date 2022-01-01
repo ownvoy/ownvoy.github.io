@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ownvoy__공부블로그"
+title                    : "ownvoy__공부 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "ownvoy"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "ownvoy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Every start up is an open night success, but it happens on 500th night."
+  bio              : "Every startup is an open night success, but it happens on 500th night."
   location         : "Somewhereonlyweknow"
   email            :
   links:
