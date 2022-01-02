@@ -13,7 +13,7 @@ _data transformation_  을 하는 이유=> 더 작업하기 좋게 위해서
 <br>
 <br>
 
-### 약어
+### 5-1 약어
 
 - int: integer  
 - dbl: double(real number)  
@@ -24,7 +24,7 @@ _data transformation_  을 하는 이유=> 더 작업하기 좋게 위해서
 - date: date  
 <br>
 
-### 5가지 dplyr function
+### 5-2 5가지 dplyr function
 
 - filter(): 값을 통해 관측치를 고른다  
 - arrange(): row을 정렬한다  
@@ -33,7 +33,7 @@ _data transformation_  을 하는 이유=> 더 작업하기 좋게 위해서
 - summarise(): 여러 속성을 하나로 정리  
 <br>
 
-#### dplyr function 사용 방법
+#### 5-2-1 dplyr function 사용 방법
 
 (__first__ , __second__, __third__)  
 __first__ = data frame  
@@ -42,7 +42,7 @@ __third__ = new data frame
 <br>
 <br>
 
-### 1.filter()
+#### 5-2-2 filter()
 
 __(__first__ , __second__, __third__)__  
 __first__ = data frame  
@@ -76,7 +76,7 @@ is.na(x)를 사용해야 한다
 <br>
 <br>
 
-### 2.arrange() 
+#### 5-2-3 arrange() 
 __(__first__ , __second__, __third__)__  
 __first__ = data frame  
 __second__= 속성  
@@ -112,7 +112,7 @@ arrange(flights,desc(dept_time))
 <br>
 <br>
 
-### 3.select() 
+#### 5-2-4 select() 
 column들을 선택한다  
 ```r
 select(flights,year,month,day)
@@ -152,7 +152,7 @@ __select()안에 쓸 수 있는 그 외 함수들__
 <br>
 <br>
 
-### 4.mutate()  
+#### 5-2-5 mutate()  
 ```r
 flights_sml <- select(flights, 
   year:day, 
@@ -201,7 +201,7 @@ transmute(flights,
 <br>
 <br>
 
-### 5.summarise()
+#### 5-2-5 summarise()
 __summarise()__ 는 __group_by()__ 와 짝꿍  
 __group_by()__ 를 통해 전체 데이터에 적용하는 것이 아닌 그룹별로 적용 가능!  
 
@@ -253,7 +253,7 @@ flights %>%
 위의 코드와 똑같은 결과가 나온다  
 <br>
 
-#### Grouping by multiple variables
+##### 5-2-5-1 Grouping by multiple variables
 ```r
 daily <- group_by(flights, year, month, day)
 (per_day   <- summarise(daily, flights = n()))
@@ -312,7 +312,7 @@ day까 없어지는 걸로
 <br>
 <br>
 
-#### ungrouping
+##### 5-2-5-2 ungrouping
 그룹푸는 법
 ```r
 daily %>% 

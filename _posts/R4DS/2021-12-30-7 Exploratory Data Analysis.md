@@ -266,7 +266,7 @@ __variation__ 이 하나의 variable 안에서의 모습을 묘사한 거라면 
 <br>
 <br>
 
-#### 7-4-1A categorical and continuous variable
+#### 7-4-1 categorical and continuous variable
 _continuous variable_ 의 distribution을 살펴 보기 위해 앞서 했듯이, `geom_freqpoly()`를 사용할 수 있다.  
 <br>
 그러나 이는 그다지 좋은 방법이 아니다. y축이 count로 제시 되어 있기에 count가 적은 그룹 같은 경우 변화를 관측하기 어렵다.  

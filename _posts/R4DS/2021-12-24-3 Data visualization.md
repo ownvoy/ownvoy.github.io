@@ -33,14 +33,14 @@ __ggplot2__ 에 있는 `mpg` __data frame__ 을 사용
 <br>
 <br>
 
-### mpg 용어
+### 3-1 mpg 용어
 - __displ__: 엔진 사이즈  
 - __hwy__: 연비 on highway  
 - __cyl__: 엔진 aka cylinder  
 - __drv__: 구동 방식 (f= front 전륜구동, r = rear 후륜구동, 4= 4륜구동) 
 <br>  
 
-### creating a ggplot
+### 3-2 creating a ggplot
 ```r
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
@@ -55,7 +55,7 @@ ggplot(data = mpg) +
 <br>
 <br>
 
-### facets
+### 3-3 facets
 __categorical value__ 를 잘 다루는 방법으로는 __facets__ 으로 __plot__ 을 나눌 수 있다  
 ```r
 ggplot(data = mpg) + 
@@ -76,7 +76,7 @@ ggplot(data = mpg) +
 <br>
 <br>
 
-### geom_point와 geom_smooth
+### 3-4 geom_point와 geom_smooth
 각각은 `geom_point` ,`geom_smooth`로 표현된 plot이다 
 ```r
 ggplot(data = mpg) + 
@@ -142,7 +142,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 <br>
 <br>
 
-### statistical transformations
+### 3-5 statistical transformations
 __ggplot2__ 에 있는 `diamonds` 데이터를 이용해보도록 한다 
 `diamonds`는 `price`, `carrot`, `color`, `clarity` 등의 정보가 있다
 ```r
@@ -202,7 +202,7 @@ ggplot(data = diamonds) +
 <br>
 <br>
 
-### Position adjustment
+### 3-6 Position adjustment
 __bar_chart__ 를 색칠 할 수도 있다
 ```r
 ggplot(data = diamonds) + 
@@ -227,7 +227,7 @@ __position adjustment__ 에 의해 bar들이 쌓아진다
 다른 방식으로도 쌓기가 가능한데 `"Identity"`,`"Dodge"`, `"fill"`이 있다  
 <br>
 
-#### "Identity"
+#### 3-6-1 "Identity"
 `position = "identity"`는 실제 값에 대응하게 한다.
 그래서 __bar chart__ 에는 좋지 못하다.
 영역들이 겹칠 수 있기 때문이다.
@@ -240,7 +240,7 @@ ggplot(data = diamonds, mapping = aes(x = cut, colour = clarity)) +
 <br>
 <br>
 
-#### "Dodge" 
+#### 3-6-2 "Dodge" 
 `position = "dodge"`는 각각을 옆에 배치 한다.  
 ```r
 ggplot(data = diamonds) + 
@@ -250,7 +250,7 @@ ggplot(data = diamonds) +
 <br>
 <br>
 
-#### "Fill"
+#### 3-6-3 "Fill"
 `position = "fill"`은 각각의 비율을 알기 쉽게 해준다.
 ```r
 ggplot(data = diamonds) + 
@@ -258,7 +258,7 @@ ggplot(data = diamonds) +
   ```
 ![Rplot05](https://user-images.githubusercontent.com/96481582/147550991-583dd36b-d785-4548-a2c7-4d09bc83c1a8.png)
 
-### Coordinate systems
+### 3-7 Coordinate systems
 ```r
 bar <- ggplot(data = diamonds) + 
   geom_bar(
