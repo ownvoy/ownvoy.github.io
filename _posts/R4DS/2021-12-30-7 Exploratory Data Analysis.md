@@ -2,6 +2,7 @@
 
 title: "7 Exploratory Data Analysis"
 categories: R4DS
+excerpt: 탐색적 데이터 분석
 
 toc: true
 toc_sticky: true

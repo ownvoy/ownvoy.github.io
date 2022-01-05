@@ -2,7 +2,7 @@
 
 title: "3 Data visualisation"
 categories: R4DS
-
+excerpt: 데이터 시각화
 toc: true
 toc_sticky: true
 

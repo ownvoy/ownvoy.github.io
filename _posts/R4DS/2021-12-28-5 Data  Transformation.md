@@ -2,7 +2,7 @@
 
 title: "5 Data Transformation"
 categories: R4DS
-
+excerpt: 데이터 변환
 toc: true
 toc_sticky: true
 
