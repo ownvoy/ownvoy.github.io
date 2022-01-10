@@ -337,6 +337,7 @@ y <- tribble(
 )
 left_join(x, y, by = "key")
 ```
+
 ```r
 # A tibble: 4 x 3
     key val_x val_y
@@ -348,6 +349,7 @@ left_join(x, y, by = "key")
 ```
 
 2. table 2개가 duplicate keys를 가지고 있다. 보통의 경우 error이다. 어느 table 하나 key가 observation을 identify하지 못했기 때문이다.(~~그게 왜 error인데~~)
+
 ```r
 x <- tribble(
   ~key, ~val_x,
@@ -377,6 +379,7 @@ left_join(x, y, by = "key")
 5     2 x3    y3
 6     3 x4    y4   
 ```
+
 <br>
 <br>
 
