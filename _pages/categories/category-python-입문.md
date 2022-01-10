@@ -7,5 +7,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.python 입문 %}
+{% assign posts = site.categories.['Python 입문'] %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

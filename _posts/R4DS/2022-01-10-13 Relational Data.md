@@ -8,7 +8,7 @@ toc_sticky: true
 
 date: 2022-01-10
 ---
-### 11-1 Relational Data
+### 13-1 Relational Data
 하나의 data frame만을 갖고 해석 하는 것은 드문 일이다. 대개 여러 개의 data frame을 합쳐서 분석한다. data들은 연결되어 있기 때문에, 여러 개의 data frame을 __relational data__ 라 부른다.  
 
 relational data를 다루기 위한 3개의 동사가 있다.
@@ -20,7 +20,7 @@ relational data를 다루기 위한 3개의 동사가 있다.
 <br>
 <br>
 
-### 11-2 nycflights13
+### 13-2 nycflights13
 relational data에 대해 배우기 위해 nycflights13을 사용할 것이다. nycflight은 `flights`와 관련된 4개의 table을 가지고 있다. 
  
 `airlines`는 약어로 전체 항공사명을 볼 수 있다.    
@@ -112,7 +112,7 @@ planes
 <br>
 <br>
 
-### 11-3 Keys
+### 13-3 Keys
 각각의 table을 연결짓는 variable를 __key__ 라 한다. key는 unique하게 observation을 identify 한다. 예를 들어 각각의 plane은 tailnum으로 identified 되었다. 또  `weather`에 있는 observation은 `year`,`month`,`day`,`hour`,`origin`으로 identifiy 되었다.  
 <br>
 
@@ -209,7 +209,7 @@ many-to-1과 1-to-many를 합쳐서 many to many relation을 형성하는 것도
 <br>
 <br>
 
-### 11-4 Mutating joins
+### 13-4 Mutating joins
 table들을 합치는 tool 중 처음 볼 것은 __mutating join__ 이다. key를 통해 observation을 match 한 다음에 다른 table의 variable을 가져온다.  
 
 `mutate`처럼 variable을 오른쪽에 추가한다.  
@@ -261,7 +261,7 @@ flights2 %>%
 <br>
 <br>
 
-#### 11-4-1 Understanding joins
+#### 13-4-1 Understanding joins
 이제 그림과 함께 어떻게 join이 work하는지 쉽게 보여줄 것이다.  
 ```r
 x <- tribble(
@@ -286,7 +286,7 @@ join이라는 작업은 `x` 있는 row를 `y`에 있는 row에 연결 하는 것
 <br>
 <br>
 
-#### 11-4-2 Inner join
+#### 13-4-2 Inner join
 inner join은 key가 같을 때만 match한다.  
 ![제목 없음](https://user-images.githubusercontent.com/96481582/148716131-f5bbfdd4-0461-41c0-8960-484ac0f045fe.png)
 ```r
@@ -304,7 +304,7 @@ x %>%
 <br>
 <br>
 
-#### 11-4-3 Outer joins
+#### 13-4-3 Outer joins
 inner join이 observation이 양쪽 둘 다 있어야지만 살려줬다면, outer join은 한쪽에만 있어도 살려준다. 
 세가지 outer join이 있다.  
 
@@ -318,7 +318,7 @@ inner join이 observation이 양쪽 둘 다 있어야지만 살려줬다면, out
 <br>
 <br>
 
-#### 11-4-4 Duplicate keys
+#### 13-4-4 Duplicate keys
 지금까지 table에서의 key는 unique하였지만 여기서 다룰 table은 그렇지 않다. 두 가지 table을 보도록 하자.   
 
 1. table 1개가 duplicate keys를 가지고 있다. 전형적인 1-to-many relation이다.  
@@ -383,7 +383,7 @@ left_join(x, y, by = "key")
 <br>
 <br>
 
-#### 11-4-5 Defining the key columns
+#### 13-4-5 Defining the key columns
 지금까지는 두 개의 공통으로 있는 한 개의 variable의 name으로 joing하였는데 이는 `by = "key"`로 가능한 것이었다. 
 
 `by`를 사용하여 다른 방식으로 이을 수 있다. 
@@ -436,7 +436,7 @@ flights2 %>%
 #   model <chr>, engines <int>, seats <int>, speed <int>, engine <chr>
 ```
 
-### 11-5 Set operation
+### 13-5 Set operation
 이 operation은 모든 variable의 value를 비교하면서 전체 row에 적용된다. x와 y가 똑같은 variable을 가진다면, observation은 set처럼 다루어진다.  
 
 ```r
