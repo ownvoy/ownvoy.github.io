@@ -23,7 +23,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
         <span class="nav__sub-title">Python</span>
             <ul>
                 {% for category in site.categories %}
