@@ -43,7 +43,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python-입문" %}
-                        <li><a href="/categories/python-입문" class="">python 입문 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Intorduction-to-Python" class="">python 입문 복습 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
