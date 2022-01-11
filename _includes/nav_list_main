@@ -27,7 +27,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Introduction to Python" %}
-                        <li><a href="/categories/introduction-to-python" class="">파이썬 빠르게 복습 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/introduction-python" class="">파이썬 입문 복습 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
