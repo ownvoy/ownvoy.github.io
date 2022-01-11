@@ -22,8 +22,7 @@
                         <li><a href="/categories/R4DS" class="">R4DS 책 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            
+            </ul>        
         <span class="nav__sub-title">Mathematics</span>
             <ul>
                 {% for category in site.categories %}
@@ -39,11 +38,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Python</span>
+            <span class="nav__sub-title">Python</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] = "Intorduction to Python" %}
-                        <li><a href="/categories/Intorduction-to-Python" class="">python 입문 복습 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Python 입문" %}
+                        <li><a href="/categories/Introduction to Python" class="">python 입문 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -56,4 +55,4 @@
             </ul>
       </li>
   </ul>
-</nav>
+</nav
