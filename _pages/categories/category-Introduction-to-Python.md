@@ -1,5 +1,5 @@
 ---
-title: "Introduction to python 책 빠르게 복습"
+title: "파이썬 빠르게 복습"
 layout: archive
 permalink: categories/Introduction-to-Python
 author_profile: true
