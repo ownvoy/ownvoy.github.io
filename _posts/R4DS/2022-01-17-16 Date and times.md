@@ -79,9 +79,6 @@ now()
 
 
 이거 아니면 시간 데이터를 만드는 3가지 방법이 또 있다.  
-- From a string.
-From individual date-time components.
-From an existing date/time object.
 <br>
 <br>
 
@@ -376,10 +373,10 @@ wday(datetime, label = TRUE)
 
 금
 <details>
-	<summary style=display:list-item;cursor:pointer>
+	
 		<strong>Levels</strong>:
-	</summary>
-	<ol class=list-inline>
+	
+	
 		<li>'일'</li>
 		<li>'월'</li>
 		<li>'화'</li>
@@ -399,10 +396,10 @@ wday(datetime, label = TRUE, abbr = FALSE)
 
 금요일
 <details>
-	<summary style=display:list-item;cursor:pointer>
+	
 		<strong>Levels</strong>:
-	</summary>
-	<ol class=list-inline>
+	
+	
 		<li>'일요일'</li>
 		<li>'월요일'</li>
 		<li>'화요일'</li>
@@ -410,7 +407,6 @@ wday(datetime, label = TRUE, abbr = FALSE)
 		<li>'목요일'</li>
 		<li>'금요일'</li>
 		<li>'토요일'</li>
-	</ol>
 </details>
 
 <br>
@@ -604,9 +600,9 @@ dhours(c(12, 24))
 ```
 
 
-<ol class=list-inline>
-	<li>43200s (~12 hours)</li>
-	<li>86400s (~1 days)</li>
+
+	43200s (~12 hours)
+	86400s (~1 days)
 </ol>
 
 
@@ -617,13 +613,13 @@ ddays(0:5)
 ```
 
 
-<ol class=list-inline>
-	<li>0s</li>
-	<li>86400s (~1 days)</li>
-	<li>172800s (~2 days)</li>
-	<li>259200s (~3 days)</li>
-	<li>345600s (~4 days)</li>
-	<li>432000s (~5 days)</li>
+
+	0s
+	86400s (~1 days)
+	172800s (~2 days)
+	259200s (~3 days)
+	345600s (~4 days)
+	432000s (~5 days)
 </ol>
 
 
@@ -727,9 +723,9 @@ hours(c(12, 24))
 ```
 
 
-<ol class=list-inline>
-	<li>12H 0M 0S</li>
-	<li>24H 0M 0S</li>
+
+	12H 0M 0S
+	24H 0M 0S
 </ol>
 
 
@@ -749,13 +745,13 @@ months(1:6)
 ```
 
 
-<ol class=list-inline>
-	<li>1m 0d 0H 0M 0S</li>
-	<li>2m 0d 0H 0M 0S</li>
-	<li>3m 0d 0H 0M 0S</li>
-	<li>4m 0d 0H 0M 0S</li>
-	<li>5m 0d 0H 0M 0S</li>
-	<li>6m 0d 0H 0M 0S</li>
+
+	1m 0d 0H 0M 0S
+	2m 0d 0H 0M 0S
+	3m 0d 0H 0M 0S
+	4m 0d 0H 0M 0S
+	5m 0d 0H 0M 0S
+	6m 0d 0H 0M 0S
 </ol>
 
 
@@ -805,7 +801,6 @@ days(50) + hours(25) + minutes(2)
 ```R
 ymd("2016-01-01") + dyears(1)
 ```
-
 
 <time datetime="2016-12-31">2016-12-31</time>
 
