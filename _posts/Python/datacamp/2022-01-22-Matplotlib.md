@@ -2,7 +2,7 @@
 
 title: "Matplotlib"
 categories: datacamp
-excerpt: Intermediate python
+excerpt: Intermediate Python
 toc: true
 toc_sticky: true
 
