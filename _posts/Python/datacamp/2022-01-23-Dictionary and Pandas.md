@@ -1,6 +1,6 @@
 ---
 
-title: "Matplotlib"
+title: "Dictonaries and Pandas"
 categories: datacamp
 excerpt: Intermediate Python
 toc: true
