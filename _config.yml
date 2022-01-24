@@ -105,7 +105,7 @@ author:
   name             : "ownvoy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Every startup is an open night success, but it happens on 500th night."
-  location         : "Somewhereonlyweknow"
+  location         : 
   email            :
   links:
     - label: "Email"
