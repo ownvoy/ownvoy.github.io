@@ -42,9 +42,9 @@ print(np.random.randint(1,7))
 <br>
 <br>
 
-### application
+### Application
 
-다음과 같은 상황을 생각해보자.  
+지금까지 배운 것들을 응용해보도록 하는 파트이다. 다음과 같은 상황을 생각해보자.  
 
 > 0층에서부터 60층까지의 타워를 오르려고 한다. 주사위를 던져서 2 이하 숫자가 나오면 한층 내려가고, 3에서 5의 숫자가 나오면 한 칸 올라가고, 6이 나오면 주사위를 한 번 더 던져서 나온 숫자만큼 올라 간다.  
 
@@ -211,15 +211,8 @@ print(np_aw)
 
 matrix로 표현하면 다음과 같다. 
 
- $\begin{pmatrix}
-  0 & 0 & 1 & \cdots & 83 & 84 & 85\\
-  0 & 0 & 6 & \cdots & 113 & 112 & 115\\
-  0 & 0 & 1 & \cdots & 94 & 93 & 92\\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  0 & 0 & 1 & \cdots & 60 & 61 & 62\\
-  0 & 1 & 2 & \cdots & 52 & 54 & 53\\
-  0 & 1 & 2 & \cdots & 57 & 58 & 59\\
- \end{pmatrix}$
+![제목 없음](https://user-images.githubusercontent.com/96481582/151689649-79971b84-f1aa-4b1b-8026-8826bb1b9a56.png)
+
 
 하나의 column이 하나의 plot으로 그려진것을 확인할 수 있다.
 
@@ -281,15 +274,8 @@ print(np_aw_t)
 
 matrix로 표현하면
 
- $\begin{pmatrix}
-  0 & 0 & \cdots & 0 & 0 & 0\\
-  0 & 0 & \cdots & 0 & 1 & 1\\
-  1 & 6 & \cdots & 1 & 2 & 2\\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  83 & 113 & \cdots & 60 & 52 & 57\\
-  84 & 112 & \cdots & 61 & 54 & 58\\
-  85 & 115 & \cdots & 62 & 53 & 59\\
- \end{pmatrix}$
+![제목 없음](https://user-images.githubusercontent.com/96481582/151689706-7afb12ca-828c-45a7-8ff7-4b945d55c4b4.png)
+
 
 <br>
 
