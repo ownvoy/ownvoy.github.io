@@ -2,7 +2,7 @@
 
 title: "Transforming and Aggregating df"
 categories: datacamp
-excerpt: Intermediate Python
+excerpt: Data Manipulation with pandas
 toc: true
 toc_sticky: true
 
