@@ -1,6 +1,6 @@
 ---
 
-title: "Transforming and Aggregating df"
+title: "Slicing and Indexing Df"
 categories: datacamp
 excerpt: Data Manipulation with pandas
 toc: true

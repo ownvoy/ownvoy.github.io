@@ -1,3 +1,13 @@
+---
+
+title: "Plotting Time Series"
+categories: datacamp
+excerpt: Introduction to Data Visualization with Matplotlib
+toc: true
+toc_sticky: true
+
+date: 2022-02-06
+---
 ## Plotting Time Series
 ```python
 import pandas as pd
