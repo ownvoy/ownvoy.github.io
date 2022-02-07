@@ -2,7 +2,7 @@
 
 title: "Quantitative comparisons and Sharing"
 categories: datacamp
-excerpt: Data Manipulation with pandas
+excerpt: Introduction to Data Visualization with Matplotlib
 toc: true
 toc_sticky: true
 
@@ -37,9 +37,7 @@ ax.set_ylabel("Number of medals")
 plt.show()
 ```
 
-    C:\Users\wj527\AppData\Local\Temp/ipykernel_26372/884125981.py:4: UserWarning: FixedFormatter should only be used together with FixedLocator
-      ax.set_xticklabels(medals.index, rotation= 90)
-    
+
 
 
     
@@ -326,10 +324,9 @@ print(sports)
      'Triathlon' 'Archery' 'Synchronized Swimming' 'Modern Pentathlon'
      'Trampolining' 'Golf']
     
-<br>
-
 이렇게 category를 알 수 있기도 하다.  
-
+<br>
+아까 해볼려던 것을 해보자.  
 
 ```python
 plt.style.use("ggplot")
