@@ -6,9 +6,8 @@ excerpt: Data Manipulation with pandas
 toc: true
 toc_sticky: true
 
-date: 2022-01-29
+date: 2022-02-07
 ---
-## Quantitative comparisons and Sharing
 
 
 ```python
