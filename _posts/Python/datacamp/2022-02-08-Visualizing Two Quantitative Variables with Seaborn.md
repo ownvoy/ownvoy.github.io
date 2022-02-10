@@ -14,7 +14,8 @@ date: 2022-02-08
 Seborn library는 visualization을 간편하게 해준다. 또한 pandas data structure을 갖고 용이하게 작업을 할 수 있으며, matplotlib에 기반을 두고 있다.  
 
 
-```python
+```python.....
+
 import seaborn as sns
 ```
 
