@@ -1,5 +1,5 @@
 ---
-title: "스크랩(scrap)은 차량 부품, 건물 부속, 잉여 물질 등 제품 제조와 소비를 통해 남은 재활용 가능한 물질들로 구성된다."
+title: "어쩌면 이것은 희망과 도전에 대한 이야기입니다."
 layout: archive
 permalink: categories/scrap
 author_profile: true
