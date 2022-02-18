@@ -23,6 +23,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Book</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "scribe" %}
+                        <li><a href="/categories/scribe" class="">scribe ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "scrap" %}
+                        <li><a href="/categories/scrap" class="">scrap ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Python</span>
             <ul>
                 {% for category in site.categories %}
