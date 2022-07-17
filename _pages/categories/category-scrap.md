@@ -1,7 +1,7 @@
 ---
 title: "어쩌면 이것은 희망과 도전에 대한 이야기입니다."
 layout: archive
-permalink: categories/scrap
+permalink: categories/#scrap
 author_profile: true
 sidebar_main: true
 ---
