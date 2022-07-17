@@ -41,7 +41,7 @@
         <span class="nav__sub-title">Python</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Introduction to Python" %}
+                    {% if category[0] == "introduction-python" %}
                         <li><a href="/categories/introduction-python" class="">파이썬 입문 복습 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
