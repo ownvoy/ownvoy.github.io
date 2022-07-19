@@ -6,6 +6,7 @@ excerpt: linked list
 toc: true
 toc_sticky: false
 author_profile: false
+use_math: true
 date: 2022-07-19
 ---
 
@@ -126,13 +127,13 @@ Node *tempnode = (Node *)malloc(sizeof(Node));
     tempnode->value = value;
 ```
 
-<center><img src = https://user-images.githubusercontent.com/96481582/179668065-bd3abc8b-fa68-445a-929e-4e59d040f97c.png width=80% height=80%></center>
+![image](https://user-images.githubusercontent.com/96481582/179668065-bd3abc8b-fa68-445a-929e-4e59d040f97c.png)
 
 ```c
 tempnode->next = *PtrHead;
 ```
 
-<center><img src=https://user-images.githubusercontent.com/96481582/179669548-60211977-9033-4e71-ab7d-baf88c4aa097.png width=80% height=80%></center>
+![image](https://user-images.githubusercontent.com/96481582/179669548-60211977-9033-4e71-ab7d-baf88c4aa097.png)
 
 ```c
 *PtrHead = tempnode;
